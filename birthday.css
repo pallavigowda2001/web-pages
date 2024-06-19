@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color:rgb(20,67,94) ;
+    width:100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width:100%;
+    margin: auto;
+    font-family:'Courier New';
+
+}
+
+.container .link{
+    padding: 20px;
+}
+
+.container .link a{
+    color: #fff;
+    font-size: 0.8em;
+    font-family: monospace;
+    letter-spacing: 2px;
+
+}
+
+.container .logo{
+    padding:20px;
+}
+
+.container .content {
+    color: #fff;
+    width:50vw;
+}
+
+.container .content h1{
+    font-size: 3.9em;
+    line-height: 125%;
+    text-align: center;
+    
+}
+
+.container .content p{
+    line-height: 175%;
+    font-size: 0.9em;
+}
+
+.container .treat{
+    color: #fff;
+    border:2px solid #fff;
+    font-size:1.3rem;
+    border-radius: 10px;
+    width:20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    font-weight: bold;
+    text-transform: capitalize;
+
+}
+
+.container .icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+
+.container .icons a {
+    background: #f56462;
+    color: #fff;
+    padding: 20px;
+    font-size: 2rem;
+    border-radius: 50%;
+    height: 60px !important;
+    width:60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.container .quote{
+    background-color: #f9e667;
+    width:50vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+
+
+}
+
+.container .quote blockquote{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:20px;
+}
+
+.container .quote blockquote q{
+    font-size: 1.7rem;
+}
+
+
+@media screen and (max-width:768px) {
+    .container .avatar{
+        width:100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .container .avatar img{
+        width:80%;
+    }
+
+    .container .content{
+        width:80vw;
+        text-align: justify;
+    }
+
+    .container .content p{
+        word-break: break-all;
+    }
+
+    .container .treat{
+        width:80vw;
+    }
+
+    .container .quote{
+        width:90vw;
+    }
+
+    .container .quote blockquote q{
+        font-size: 96%;
+    }
+}
